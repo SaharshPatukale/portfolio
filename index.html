@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Saharsh Patukale — Web Developer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#home">Saharsh Patukale</a>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.docx" download>Resume</a>
+      <a href="https://www.linkedin.com/in/saharsh-patukale-84252b300" target="_blank" rel="noopener" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Saharsh</span></h1>
+        <p class="lead">Web Developer &amp; Cybersecurity Intern — I build fast, mobile-first websites and clean UIs. I also do Photoshop & video editing.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn alt" href="#contact">Contact</a>
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="about" class="section card">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>I'm <strong>Saharsh Patukale</strong>, a front-end web developer with internship experience in cybersecurity (Cybersena, 3 months). I build responsive, accessible websites using HTML, CSS and JavaScript, and produce visuals using Photoshop and video editing tools. I enjoy solving UI problems and making fast, reliable sites that work great on mobile devices.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/proj1.svg" alt="Modern Landing" />
+          <div class="card-body">
+            <h3>Modern Landing Page</h3>
+            <p>Mobile-first landing page focused on conversions and fast loading. Tech: HTML, CSS, JS.</p>
+            <div class="proj-links">
+              <a class="link" href="projects/modern-landing/index.html" target="_blank">Live demo</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/proj2.svg" alt="Login UI" />
+          <div class="card-body">
+            <h3>Login / Register UI</h3>
+            <p>Clean and accessible form UI with client-side validation. Tech: HTML, CSS, JS.</p>
+            <div class="proj-links">
+              <a class="link" href="projects/login-ui/">Live demo</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/proj3.svg" alt="Business Website" />
+          <div class="card-body">
+            <h3>Responsive Business Website</h3>
+            <p>Multi-section website for small businesses with services, contact and pricing. Tech: HTML, CSS, JS.</p>
+            <div class="proj-links">
+              <a class="link" href="projects/business-website/">Live demo</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section card">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Responsive Design (mobile-first)</li>
+        <li>React (basic)</li>
+        <li>Bootstrap / Tailwind</li>
+        <li>Git &amp; GitHub</li>
+        <li>Cybersecurity — Vulnerability scanning, OSINT, Report writing</li>
+        <li>Photoshop &amp; Video Editing</li>
+        <li>Python (basics)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="wrap contact-grid card">
+      <div>
+        <h2>Contact</h2>
+        <p>Use the form to reach me or email directly at <a href="mailto:patukalesaharsh@gmail.com">patukalesaharsh@gmail.com</a> — I typically respond within 24–48 hours.</p>
+        <p><strong>Phone:</strong> 6361398007</p>
+        <p class="small">You can also view my resume or live demos above.</p>
+      </div>
+      <div class="form-wrap">
+        <!-- Embedded Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYHYfF8nBXZhIIrByXGAeCyBcCeaBm7Pf62u9LSP-dH1unYA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p>&copy; 2025 Saharsh Patukale</p>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/saharsh-patukale-84252b300" aria-label="LinkedIn" target="_blank" rel="noopener" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const nav = document.getElementById('nav');
+  navToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+  // smooth scroll behavior fallback
+  document.documentElement.style.scrollBehavior = 'smooth';
+</script>
+</body>
+</html>
